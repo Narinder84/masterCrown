@@ -1,0 +1,11 @@
+/** @format */
+
+.collection_preview_container {
+	display: flex;
+	flex-direction: column;
+
+	.collection_preview_items {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}

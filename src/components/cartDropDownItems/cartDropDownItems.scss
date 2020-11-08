@@ -1,0 +1,22 @@
+/** @format */
+
+.drop_down_items {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-bottom: 2px;
+
+	background-color: whitesmoke;
+	.image {
+		margin-right: 10px;
+		width: 25%;
+		height: 25%;
+		background-size: cover;
+	}
+	#sp_cartDropdown {
+		color: black;
+	}
+	#sp_cartDropdown_item {
+		color: black;
+	}
+}

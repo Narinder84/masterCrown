@@ -1,0 +1,42 @@
+/** @format */
+$primaryColor: #1b8f78;
+$seconderColor: #63ffe0;
+$basbgroundColor: #d4d4d4;
+$optionalColor: #8f4d36;
+
+.header-container {
+	background-color: #1b8f78;
+	padding: 0 0 0 14px;
+	height: 60px;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.header-left {
+		width: 30%;
+		font-size: 1.2em;
+		a {
+			color: white;
+		}
+	}
+	.header-right {
+		padding: 0 12px 0 10px;
+		width: 50%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		a {
+			color: white;
+		}
+		span {
+			color: white;
+			text-decoration: underline;
+			cursor: pointer;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}

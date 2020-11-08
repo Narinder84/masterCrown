@@ -1,0 +1,9 @@
+/** @format */
+
+export const shopActionTypes = {
+	TOGGLE_CART: 'TOGGLE_CART',
+	ADD_ITEM_TO_CART: 'ADD_ITEM_TO_CART',
+	REDUCE_ITEM: 'REDUCE_ITEM',
+	DELETE_ITEM: 'DELETE_ITEM',
+	DELETE_ALL_ITEMS: 'DELETE_ALL_ITEMS',
+};

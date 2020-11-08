@@ -1,0 +1,51 @@
+/** @format */
+
+.check_out_items {
+	display: flex;
+	.check_Out_header {
+		width: 20%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 5px 0px;
+		.check_Out_image {
+			width: 100px;
+			height: 110px;
+		}
+	}
+	.header {
+		width: 20%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 5px 0px;
+
+		span {
+			font-size: 1em;
+			& :hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.br {
+	margin-right: 5px;
+	& :hover {
+		cursor: pointer;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.check_out_items .check_Out_header .check_Out_image {
+		width: 20px;
+		height: 25px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.check_out_items .check_Out_header .check_Out_image {
+		width: 50px;
+		height: 55px;
+	}
+}

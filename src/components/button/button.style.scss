@@ -1,0 +1,25 @@
+/** @format */
+.button {
+	padding: 10px;
+	display: flex;
+	color: white;
+
+	border: white 1px solid;
+
+	&:hover {
+		cursor: pointer;
+		color: black;
+		background: white;
+		border: black 1px solid;
+	}
+	&:active {
+		color: white;
+		background: black;
+	}
+}
+.google {
+	background-color: royalblue;
+}
+.normal {
+	background-color: black;
+}

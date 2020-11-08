@@ -1,0 +1,70 @@
+/** @format */
+.checkOut_container {
+	display: flex;
+	flex-direction: column;
+	padding: 0px 20px;
+	p {
+		font-size: 1.3em;
+		text-decoration: underline;
+	}
+
+	.warning {
+		color: red;
+		text-decoration: none;
+	}
+}
+.checkOut_header {
+	border-bottom: solid 5px lightgray;
+	display: flex;
+	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	background-color: whitesmoke;
+	.header {
+		width: 20%;
+		display: flex;
+		justify-content: center;
+		padding: 5px 0px;
+
+		span {
+			font-size: large;
+		}
+	}
+}
+.table_contents {
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	// align-items: center;
+	// justify-content: center;
+	span {
+		font-size: 1.3em;
+	}
+}
+
+.checkOut_footer {
+	border-top: solid 5px lightgray;
+	display: flex;
+	justify-content: space-between;
+	position: sticky;
+	margin-right: 20px;
+	background-color: whitesmoke;
+
+	.footer {
+		width: 20%;
+		display: flex;
+		justify-content: center;
+		padding: 5px 0px;
+		span {
+			font-size: large;
+		}
+	}
+}
+
+.check_bt {
+	display: flex;
+	justify-content: flex-end;
+	.pay {
+		width: 200px;
+	}
+}

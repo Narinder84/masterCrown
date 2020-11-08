@@ -1,0 +1,17 @@
+/** @format */
+
+.collection-container {
+	padding: 0 10px 5px 10px;
+	display: flex;
+	flex-wrap: wrap;
+
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+	.collection {
+		width: 800px;
+		height: 300px;
+		margin-bottom: 10px;
+	}
+}

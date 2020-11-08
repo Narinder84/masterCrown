@@ -1,0 +1,20 @@
+/** @format */
+
+.collectionOverview_container {
+	// border: brown 2px solid;
+	padding: 0 0px 0 50px;
+	display: flex;
+	flex-direction: column;
+	height: 88.1vh;
+}
+
+@media screen and (max-width: 900px) {
+	.collectionOverview_container {
+		padding: 0 11.5%;
+	}
+}
+@media screen and (max-width: 600px) {
+	.collectionOverview_container {
+		padding: 0 0% 0 7%;
+	}
+}
