@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
 
 import { auth } from '../../firabase/fireBaseUtils.js';
 import { getUserSinghOut } from '../../redux/user/user.action';
@@ -10,7 +9,14 @@ import { deleteAllItems } from '../../redux/cart/cart.actions';
 import { ReactComponent as Logo } from '../../assets/crown.svg';
 import ShopingBag from '../../components/shoping-bag/shoping-bag.component';
 
-import './header.styles.scss';
+import {
+	HeaderContainer,
+	LeftContainer,
+	LinkContainer,
+	RightContainer,
+	SpanTag,
+} from './header.style';
+// import './header.styles.scss';
 
 const Header = ({ currentUser, getUserSinghOut, deleteAllItems }) => {
 	const handleSignOut = () => {
@@ -22,24 +28,24 @@ const Header = ({ currentUser, getUserSinghOut, deleteAllItems }) => {
 	};
 	return (
 		<>
-			<div className='header-container'>
-				<div className='header-left'>
-					<Link to='/'>
+			<HeaderContainer>
+				<LeftContainer>
+					<LinkContainer to='/'>
 						<Logo />
-					</Link>
-				</div>
-				<div className='header-right'>
-					<Link to='/shop'>Shop</Link>
+					</LinkContainer>
+				</LeftContainer>
+				<RightContainer>
+					<LinkContainer to='/shop'>Shop</LinkContainer>
 					{currentUser ? (
-						<span onClick={() => handleSignOut()}>Sign Out</span>
+						<SpanTag onClick={() => handleSignOut()}>Sign Out</SpanTag>
 					) : (
-						<Link to='/signIn'>Sign In</Link>
+						<LinkContainer to='/signIn'>Sign In</LinkContainer>
 					)}
 
-					<Link to='/checkOut'>Check Out</Link>
+					<LinkContainer to='/checkOut'>Check Out</LinkContainer>
 					<ShopingBag />
-				</div>
-			</div>
+				</RightContainer>
+			</HeaderContainer>
 		</>
 	);
 };

@@ -12,7 +12,7 @@ import {
 	createDataBase,
 } from './firabase/fireBaseUtils';
 import Header from './components/header/header.component';
-import HomePage from './pages/directory/HomePage.page';
+import HomePage from './pages/home/HomePage.page';
 import ShopPage from './pages/shopPage/shopPage';
 import SignIn from './pages/signIn/signIn';
 import './App.css';

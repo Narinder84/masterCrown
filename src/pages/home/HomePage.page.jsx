@@ -4,7 +4,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import DirectoryItem from '../../components/directory/directory-item.componet';
-
+import { HomePageContainer } from './homePage.style';
 import './HomePage.style.scss';
 
 // interface HomePageProps {
@@ -18,11 +18,11 @@ import './HomePage.style.scss';
 export const HomePage = (props) => {
 	return (
 		<>
-			<div className='collection-container'>
+			<HomePageContainer>
 				{props.sections.map((section) => (
 					<DirectoryItem key={section.id} collection={section} />
 				))}
-			</div>
+			</HomePageContainer>
 		</>
 	);
 };
